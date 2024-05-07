@@ -1,0 +1,10 @@
+/* StarRating.css */
+.star-rating .star {
+    color: gold;
+    font-size: 20px; 
+    padding: 2px;
+}
+
+.star-rating .filled {
+    color: orange; 
+}

@@ -1,0 +1,178 @@
+
+.footer-hero {
+    width: 100%;
+    background-color: #067bda;
+    margin: 10px; 
+    padding: 0rem;
+    height: 20%;
+  
+}
+
+.footer-box {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    padding: 1rem;
+    font-family: sans-serif;
+}
+.footer-box {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+
+    font-family: sans-serif;
+}
+
+#customers-services {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    
+}
+
+#company {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem; 
+   
+    
+}
+
+.column-1,
+.column-2 {
+    width: 100%; 
+}
+
+.column-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column-1 h2,
+.column-2 h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.column-1 a,
+.column-2 a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.column-1 a:hover,
+.column-2 a:hover {
+    text-decoration: none;
+}
+
+.horizontal-line {
+    width: 90%;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    bottom: 10px;
+    margin: 1rem; 
+}
+
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    gap: 1rem;
+    color: white;
+}
+
+.medias {
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#icon-1,
+#icon-2,
+#icon-3 {
+    color: white;
+   
+}
+
+#icon-1:hover,
+#icon-2:hover,
+#icon-3:hover {
+    transform: scale(1.5);
+    animation: icon-transform 0.5s ease-in-out;
+}
+
+@keyframes icon-transform {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-box {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .column-1,
+    .column-2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .column-1 h2,
+    .column-2 h2 {
+        font-size: 1.5rem;
+    }
+
+    .column-1 a,
+    .column-2 a {
+        font-size: 1rem;
+    }
+
+
+    .social-media {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        gap: 10px;
+        color: white;
+        font-size: 10px;
+    }
+    
+    .medias {
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+}
