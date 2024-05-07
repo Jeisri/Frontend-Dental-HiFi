@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from './Slider';
 import Footer from './Footer';
+import SearchButton from './SearchButton';
 import './Home.css';
 
 
@@ -22,7 +23,7 @@ const Home = () => {
       </header>
       <main>
         <h1>Browse Events</h1>
-        
+        <SearchButton />
         <section>
           <h3>Delhi</h3>
           <Slider slides={slides} />
