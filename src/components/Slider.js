@@ -22,13 +22,17 @@ const Slider = ({ slides }) => {
           <div className="slide" key={index}>
             <img src={slide.url} alt={`Slide ${index}`} />
             <div className="description">{slide.description}</div>
+
+            <span className="rating">
+            <i class="fas fa-star"></i>
+            {slide.rating}
+            </span>
            
             <div className="button-container">
               <button onClick={prevSlide}>Call Back</button>
               <button onClick={nextSlide}>Add to list</button>
-
-              
             </div>
+
           </div>
         ))}
       </div>
