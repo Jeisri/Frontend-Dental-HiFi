@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.parent-container {
+    margin: 1rem;
+}
+
+.bio-container {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    border: solid 0.1rem rgb(219, 219, 219);
+}
+
+.left-part {
+    width: 70%;
+    padding: 1rem;
+    justify-content: left;
+    text-align: left;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.right-part {
+    width: 30%;
+    padding: 0.5rem;
+    display: flex;  
+    flex-direction: column;
+}
+
+.dr-name {
+    font-size: xx-large;
+    font-weight: 700;
+    color: black;
+}
+
+.dr-specialization,
+.dr-experience {
+    font-size: large;
+}
+
+.education {
+    font-size: large;
+    font-weight: 600;
+    color: black;
+}
+
+.dr-services {  
+  color: black;
+    font-size: large;
+    font-weight: 600;
+}
+.description{
+    color:  black;
+}
+.images{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+}
+.image-1,.image-2{
+    width: 100%    ;
+    height: 100%;
+}
+.image-1 img{
+    width: 60% ;
+    height: 100%;
+}
+.image-2 img{
+    width: 60% ;
+    height: 100%;
+}
+
+/* .dr-image1{
+    background-image: url("images/Bio/first.jpg");
+    width: 100px;
+    height: 100px;
+    object-fit:contain;
+} */
+
+/* Tablet and mobile media queries */
+
+@media only screen and (max-width: 768px) {
+
+    .left-part{
+        padding: 0.5rem;
+        text-align: center  ;
+    }
+    .parent-container {
+        margin: 0.5rem;
+    }
+    
+    .bio-container {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .left-part,
+    .right-part {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .dr-name {
+        font-size: x-large;
+    }
+}
