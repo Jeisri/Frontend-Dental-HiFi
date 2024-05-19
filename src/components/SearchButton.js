@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import './SearchButton.css'; // Import CSS file
 
-function App() {
+const SearchButton = () => {
   const [searchText, setSearchText] = useState('');
   const [workshopMode, setWorkshopMode] = useState('');
   const [dateTime, setDateTime] = useState('');
@@ -12,61 +13,18 @@ function App() {
   };
 
   return (
-    <div
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        margin: '0 auto',
-        padding: '20px',
-        backgroundColor: 'white',
-        borderRadius: '8px',
-        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-      }}
-    >
-      <h2
-        style={{
-          fontFamily: 'Roboto, sans-serif',
-          fontSize: '24px',
-          fontWeight: 'bold',
-          color: 'black',
-          marginBottom: '16px',
-        }}
-      >
-        SEARCH FOR EVENTS HERE
-      </h2>
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-        }}
-      >
+    <div className="container">
+      <h2 className="heading">SEARCH FOR EVENTS HERE</h2>
+      <div className="inputContainer">
         <input
           type="text"
-          style={{
-            flex: 1,
-            padding: '10px',
-            border: '1px solid #ccc',
-            borderRadius: '4px',
-            marginRight: '10px',
-            fontFamily: 'Roboto, sans-serif',
-            fontSize: '16px',
-            color: 'black',
-            transition: 'box-shadow 0.3s ease',
-          }}
+          className="inputField"
           placeholder="TYPE HERE"
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
         <select
-          style={{
-            padding: '10px',
-            border: '1px solid #ccc',
-            borderRadius: '4px',
-            fontFamily: 'Roboto, sans-serif',
-            fontSize: '16px',
-            color: 'black',
-            transition: 'box-shadow 0.3s ease',
-          }}
+          className="selectField"
           value={workshopMode}
           onChange={(e) => setWorkshopMode(e.target.value)}
         >
@@ -77,33 +35,16 @@ function App() {
         </select>
         <input
           type="datetime-local"
-          style={{
-            padding: '10px',
-            border: '1px solid #ccc',
-            borderRadius: '4px',
-            fontFamily: 'Roboto, sans-serif',
-            fontSize: '16px',
-            color: 'black',
-            transition: 'box-shadow 0.3s ease',
-          }}
+          className="dateTimeField"
           value={dateTime}
           onChange={(e) => setDateTime(e.target.value)}
         />
-        <button
-          style={{
-            backgroundColor: 'transparent',
-            border: 'none',
-            fontSize: '20px',
-            cursor: 'pointer',
-            transition: 'transform 0.2s ease',
-          }}
-          onClick={handleClear}
-        >
+        <button className="clearButton" onClick={handleClear}>
           🗑️
         </button>
       </div>
     </div>
   );
-}
+};
 
-export default App;
+export default SearchButton;
