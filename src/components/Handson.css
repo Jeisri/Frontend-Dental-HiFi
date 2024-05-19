@@ -1,0 +1,32 @@
+.handson {
+  margin: 20px;
+  padding: 30px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+.handson h1 {
+  color: blue;
+}
+.handson button {
+  color: yellow;
+  font-weight: 600;
+  background-color: blue;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+.topic h3 {
+  color:rgb(66, 187, 244);
+}
+.topic-details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+.learn {
+  flex-grow: 1;
+}
+.learn ,.details {
+  margin: 0px 50px;
+}
