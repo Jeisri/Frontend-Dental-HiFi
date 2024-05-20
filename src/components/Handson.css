@@ -1,32 +1,82 @@
 .handson {
   margin: 20px;
-  padding: 30px;
+  padding: 10px 30px;
   border: 2px solid #ddd;
   border-radius: 10px;
 }
-.handson h1 {
+.topic h1 {
   color: blue;
-}
-.handson button {
-  color: yellow;
-  font-weight: 600;
-  background-color: blue;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
-}
-.topic h3 {
-  color:rgb(66, 187, 244);
 }
 .topic-details {
   width: 100%;
   display: flex;
   align-items: center;
-  
 }
-.learn {
+.details {
   flex-grow: 1;
 }
-.learn ,.details {
-  margin: 0px 50px;
+.learn ul, .details2 {
+  margin: 0px 30px;
+}
+.learn ul, .benefits {
+  margin-bottom: 10px;
+}
+.details .inline {
+  display: inline;
+}
+.details2 {
+  margin-right: 150px;
+}
+.details2 .map-container {
+  text-align: center;
+}
+.details2 .clinic-map {
+  width: 300px;
+  height: auto;
+}
+.details2 .get-directions {
+  display: block;
+  margin-top: 5px;
+  color: #007BFF;
+  text-decoration: none;
+}
+.details2 .get-directions:hover {
+  text-decoration: underline;
+}
+.details2 .rating {
+  margin-top: 5px;
+}
+.details2 .rating-value {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+.details2 .stars {
+  color: gold;
+  font-size: 1.5rem;
+}
+.details2 .date-selector {
+  margin-top: 30px;
+  text-align: center;
+}
+.details2 .date-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+.details2 .date-inputs select {
+  padding: 5px;
+  font-size: 1rem;
+}
+.details2 .fee {
+  margin: 10px 0;
+}
+.details2 button {
+  color: yellow;
+  font-weight: 600;
+  background-color: blue;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
