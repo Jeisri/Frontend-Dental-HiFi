@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Slider from './Slider';
 import Footer from './Footer';
+import Filters from './Filters';
 import SearchButton from './SearchButton';
 import './Home.css';
 
@@ -46,6 +47,7 @@ const Home = () => {
       </main>
 
       <Footer />
+      <Filters />
     </div>
   );
 }
