@@ -47,7 +47,7 @@ const Home = () => {
       </main>
 
       <Footer />
-      <Filters />
+      
     </div>
   );
 }
