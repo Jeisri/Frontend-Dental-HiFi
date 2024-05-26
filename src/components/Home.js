@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Slider from './Slider';
 import Footer from './Footer';
+import Filters from './Filters';
 import SearchButton from './SearchButton';
 import './Home.css';
 
@@ -20,7 +21,7 @@ const Home = () => {
   return (
     <div className="Home">  
       <header className="Home-header">
-        <h1>Dental HiFi</h1>
+        <Header />
       </header>
       <main>
         <h1>Browse Events</h1>
@@ -46,6 +47,7 @@ const Home = () => {
       </main>
 
       <Footer />
+      
     </div>
   );
 }

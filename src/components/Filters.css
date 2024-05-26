@@ -1,0 +1,122 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .filters-hero {
+    width: 90%; 
+    max-width: 300px; 
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    border: solid 0.1rem rgb(219, 219, 219);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 1rem;
+    color: black;
+    margin: 0 auto; /* Center the component */
+  }
+  
+  .filter-heading {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .filters-specialist,
+  .filters-fee,
+  .filters-experience,
+  .customer-rating {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: start;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .specialist-heading,
+  .fee-heading,
+  .experience-heading,
+  .customer-heading {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  
+  /* Custom radio styles */
+  input[type="radio"] {
+    display: none;
+  }
+  
+  input[type="radio"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  input[type="radio"]:checked + label::before {
+    background-color: #000;
+    content: "✔";
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .filters-hero {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  
+    .filter-heading {
+      font-size: 1.5rem;
+    }
+  
+    .specialist-heading,
+    .fee-heading,
+    .experience-heading,
+    .customer-heading {
+      font-size: 1.1rem;
+    }
+  
+    input[type="radio"] + label::before {
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+    }
+  
+    input[type="radio"]:checked + label::before {
+      line-height: 15px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1200px) {
+    .filters-hero {
+      width: 80%;
+    }
+  
+    .filter-heading {
+      font-size: 1.8rem;
+    }
+  
+    .specialist-heading,
+    .fee-heading,
+    .experience-heading,
+    .customer-heading {
+      font-size: 1.2rem;
+    }
+  }
+  
