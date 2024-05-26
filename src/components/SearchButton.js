@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import './SearchButton.css'; // Import CSS file
-
+import './SearchButton.css'; 
 const SearchButton = () => {
   const [searchText, setSearchText] = useState('');
   const [workshopMode, setWorkshopMode] = useState('');

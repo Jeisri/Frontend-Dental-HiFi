@@ -1,9 +1,4 @@
-
-.Home {
-  text-align: center;
-  color: #067bda;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+/* Home.css */
 
 .Home-header {
   background-color: #067bda;
@@ -36,9 +31,16 @@
   color: #61dafb;
 }
 
-.Home-h3 {
-  text-align: left;
+.Home h1 {
+  text-align: center;
+  color: #067bda;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
+.Home h3 {
+  text-align: left;
+  color: black;
+  padding-left: 3%;
 }
 
 .slider-image {
@@ -46,5 +48,3 @@
   height: 400px;
   object-fit: cover;
 }
-
-
