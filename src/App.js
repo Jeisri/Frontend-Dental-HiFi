@@ -9,6 +9,7 @@ import Home from './components/Home';
 import Login from './components/LoginPage';
 import Doctor from './components/DoctorProfile';
 import Handson from './components/Handson';
+import Filters from './components/Filters';
 
 const App = () => {
     return (
@@ -20,7 +21,9 @@ const App = () => {
                     <Route path="/" element={<Doctor />} />
                     <Route path="/" element={<Handson />} />
                 </Routes>
-            </div>
+               <Filters />
+            </div> 
+            
         </Router>
     );
 };
