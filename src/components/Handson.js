@@ -1,7 +1,36 @@
 import React from 'react';
 import './Handson.css';
 
-const Handson = () => {
+function Bio() {
+    return (
+      
+        <div className="parent-container">
+            <div className="bio-container">
+                <div className="left-part">
+                    <div className="dr-image"></div>
+                    <div className="dr-name">Dr.Sachin Bansal</div>
+                    <div className="c">Dentist Implantologist</div>
+                    <div className="dr-experience">11 Years of Experience</div>
+                    <div className="education">Education: BDS, MBBS</div>
+                    <div className='dr-services'>Services: Dental Bonding, Dental Crowns, Bridge Works, Cosmetic Fillings, Invisalign</div>
+                    <div className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, quidem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, quidem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, quidem!</div>
+                </div>
+                <div className="right-part">
+                    <div className='images'>
+                        <div className='image-1'>
+                            <img src="https://cdn.pixabay.com/photo/2021/08/10/13/43/orthodontics-6536026_1280.jpg" alt="Dr. Sachin Bansal"></img>
+                        </div>  
+                        <div className='image-2'>
+                            <img src="https://cdn.pixabay.com/photo/2017/07/23/10/42/dentist-2530983_960_720.jpg" alt="Dr. Sachin Bansal"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+function Handson() {
   const handsons = [{
     topic: "X-ray Machine",
     date: "10 May 2024",
@@ -91,8 +120,87 @@ const Handson = () => {
           </div>
         </div>
       ))}
+      
     </div>
   );
 }
 
-export default Handson;
+function Combined() {
+  return (
+    <div>
+      <Bio />
+      <Handson />
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <div className="footer-hero">
+      <div className="footer-box">
+        <div id="customers-services" className="column-1">
+          <div>
+            <h2>Customers Services</h2>
+          </div>
+          <div>
+            <a id="help-faqs" href="#">
+              Help/FAQS
+            </a>
+          </div>
+          <div>
+            <a id="press" href="#">
+              Press
+            </a>
+          </div>
+          <div>
+            <a id="blog" href="#">
+              Blog
+            </a>
+          </div>
+          <div>
+            <a id="contact-us" href="#">
+              Contact Us
+            </a>
+          </div>
+        </div>
+        <div id="company" className="column-2">
+          <div>
+            <h2>Company</h2>
+          </div>
+          <div>
+            <a id="about-us" href="#">
+              About Us
+            </a>
+          </div>
+          <div>
+            <a id="career" href="#">
+              Career
+            </a>
+          </div>
+          <div>
+            <a id="report-grievance" href="#">
+              Report & Grievance
+            </a>
+          </div>
+        </div>
+
+      
+      </div>
+     <div className="horizontal-line"></div>
+     <div className="social-media">
+
+       <div className="copy-Rights" text-align="center">
+       DENTALHIFI © 2024 ALL RIGHTS RESERVED
+       </div>
+        
+        <div className="medias">
+        <a href="#" id="icon-1"><i class="fab fa-linkedin"></i></a>
+      <a href="#"  id="icon-2"><i class="fab fa-twitter"></i></a>
+      <a href="#"  id="icon-3"><i class="fab fa-instagram"></i></a>
+        </div>
+     </div>
+    </div>
+  );
+}
+
+export default Combined;

@@ -8,6 +8,7 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 
 
+
 const Home = () => {
   const slides = [
     { 
@@ -58,12 +59,14 @@ const Home = () => {
         <br />
 
         
-        <Link to="/Handson">
-          <p>Visit the Handson page</p>
-        </Link>
+        <p>Click <Link to="/handson">here</Link> to go to the Handson page.</p>
       </main>
 
       <Footer />
+
+      
+
+      
       
     </div>
   );
