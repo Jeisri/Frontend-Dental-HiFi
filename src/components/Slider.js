@@ -20,6 +20,7 @@ const Slider = ({ slides }) => {
             <img src={slide.url} alt={`Slide ${index}`} />
             <div className="slide-text">
               <div className="description">{slide.description}</div>
+              <div className="price">{slide.price}</div>
               <div className="date">{slide.date}</div>
               <div className="rating">
                 <i className="fas fa-star"></i>

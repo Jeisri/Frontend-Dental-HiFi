@@ -7,7 +7,9 @@
 }
 
 .parent-container {
-  margin: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 3rem;
 }
 
 .bio-container {
@@ -196,14 +198,16 @@ color: black;
 }
 
 .handson {
-  margin: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 2rem;
 }
 
 .topic {
   background-color: #fff;
   border-radius: 0.5rem;
   padding: 2rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  
   margin-bottom: 2rem;
 }
 
@@ -297,7 +301,7 @@ color: black;
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
   border: none;
-  background-color: #3F51B5;
+  background-color: #067bda;
   color: #fff;
   border-radius: 0.25rem;
   cursor: pointer;

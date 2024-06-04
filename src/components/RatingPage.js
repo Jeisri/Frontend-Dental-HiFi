@@ -1,51 +1,56 @@
 import React from 'react';
+import './RatingPage.css';
+import Reviews from './Reviews';  // Import the Reviews component
 
 const RatingPage = () => {
   const styles = {
     container: {
       display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
       justifyContent: 'center',
-      height: '100vh',
+      padding: '20px',
       fontFamily: 'Arial, sans-serif',
+    },
+    left: {
+      flex: 3,
+      padding: '20px',
+    },
+    right: {
+      flex: 1,
+      padding: '20px',
     },
     box: {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      justifyContent: 'center',
       padding: '30px',
-      borderRadius: '15px',
-      boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+      
       backgroundColor: '#fff',
-      width: '300px', 
     },
     rating: {
       fontSize: '48px',
       fontWeight: 'bold',
-      marginBottom: '2px', 
-      color: 'black', 
+      marginBottom: '2px',
+      color: 'black',
     },
     stars: {
       display: 'flex',
-      marginBottom: '2px', 
+      marginBottom: '2px',
     },
     star: {
       fontSize: '32px',
       color: '#ffd700',
-      margin: '0 1px', 
+      margin: '0 1px',
       textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
-      WebkitTextStroke: '1px black', 
+      WebkitTextStroke: '1px black',
     },
     halfStar: {
       position: 'relative',
       display: 'inline-block',
       fontSize: '32px',
-      margin: '0 1px', 
-      color: '#d3d3d3', 
+      margin: '0 1px',
+      color: '#d3d3d3',
       textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
-      WebkitTextStroke: '1px black', 
+      WebkitTextStroke: '1px black',
     },
     halfStarOverlay: {
       position: 'absolute',
@@ -53,18 +58,18 @@ const RatingPage = () => {
       left: 0,
       width: '50%',
       overflow: 'hidden',
-      color: '#ffd700', 
-      WebkitTextStroke: '1px black', 
+      color: '#ffd700',
+      WebkitTextStroke: '1px black',
     },
     ratingsText: {
       fontSize: '18px',
       color: '#555',
-      marginBottom: '15px', 
-      fontWeight: 'bold', 
+      marginBottom: '15px',
+      fontWeight: 'bold',
     },
     progressBarContainer: {
       width: '100%',
-      marginBottom: '9px', 
+      marginBottom: '9px',
       position: 'relative',
       display: 'flex',
       alignItems: 'center',
@@ -77,13 +82,13 @@ const RatingPage = () => {
       boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)',
       overflow: 'hidden',
       position: 'relative',
-      marginRight: '10px', 
-      border: '1px solid #000', 
+      marginRight: '10px',
+      border: '1px solid #000',
     },
     progress: {
       height: '100%',
       borderRadius: '10px 0 0 10px',
-      backgroundColor: '#00008B', 
+      backgroundColor: '#067bda',
       transition: 'width 1s ease-in-out',
     },
     progressText: {
@@ -91,31 +96,31 @@ const RatingPage = () => {
       fontWeight: 'bold',
     },
     buttonContainer: {
-      marginTop: '10px', 
+      marginTop: '10px',
     },
     buttonRow: {
       display: 'flex',
       justifyContent: 'space-between',
-      marginBottom: '5px', 
+      marginBottom: '5px',
     },
     button: {
       padding: '10px',
-      margin: '5px', 
+      margin: '5px',
       borderRadius: '20px',
       border: '1px solid #000',
       backgroundColor: '#f0f0f0',
       textAlign: 'center',
-      color: 'black', 
+      color: 'black',
     },
     greenButton: {
       backgroundColor: '#f0f0f0',
-      fontWeight: 'bold', 
+      fontWeight: 'bold',
     },
     greenNumber: {
-      color: 'darkgreen', 
+      color: 'darkgreen',
     },
     smallButton: {
-      padding: '5px', 
+      padding: '5px',
       fontSize: '14px',
     },
   };
@@ -142,7 +147,6 @@ const RatingPage = () => {
     return stars;
   };
 
-
   const renderProgressBars = () => {
     const progressData = [
       { rating: 5.0, reviews: 17, width: '70%' },
@@ -164,23 +168,28 @@ const RatingPage = () => {
 
   return (
     <div style={styles.container}>
-      <div style={styles.box}>
-        <div style={styles.rating}>4.5</div>
-        <div style={styles.stars}>{renderStars()}</div>
-        <div style={styles.ratingsText}>55 ratings</div>
-        {renderProgressBars()}
-        <div style={styles.buttonContainer}>
-          <div style={styles.buttonRow}>
-            <button style={{ ...styles.button, ...styles.greenButton }}>
-              <span style={styles.greenNumber}>4.0</span> Cleanliness
-            </button>
-            <button style={{ ...styles.button, ...styles.greenButton }}>
-              <span style={styles.greenNumber}>4.0</span> Staff
+      <div style={styles.left}>
+        <Reviews />  {/* Use the Reviews component */}
+      </div>
+      <div style={styles.right}>
+        <div style={styles.box}>
+          <div style={styles.rating}>4.5</div>
+          <div style={styles.stars}>{renderStars()}</div>
+          <div style={styles.ratingsText}>55 ratings</div>
+          {renderProgressBars()}
+          <div style={styles.buttonContainer}>
+            <div style={styles.buttonRow}>
+              <button style={{ ...styles.button, ...styles.greenButton }}>
+                <span style={styles.greenNumber}>4.0</span> Cleanliness
+              </button>
+              <button style={{ ...styles.button, ...styles.greenButton }}>
+                <span style={styles.greenNumber}>4.0</span> Staff
+              </button>
+            </div>
+            <button style={{ ...styles.button, ...styles.greenButton, ...styles.smallButton }}>
+              <span style={styles.greenNumber}>5.0</span> Behavior
             </button>
           </div>
-          <button style={{ ...styles.button, ...styles.greenButton, ...styles.smallButton }}>
-            <span style={styles.greenNumber}>5.0</span> Behavior
-          </button>
         </div>
       </div>
     </div>
