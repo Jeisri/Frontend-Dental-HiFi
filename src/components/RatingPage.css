@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .left {
+    flex: 3;
+    padding: 20px;
+  }
+  
+  .right {
+    flex: 1;
+    padding: 20px;
+  }
+  

@@ -1,7 +1,39 @@
 import React from 'react';
 import './Handson.css';
+import Footer from'./Footer';
+import Header from './Header';
+import RatingPage from './RatingPage';
 
-const Handson = () => {
+function Bio() {
+    return (
+      
+        <div className="parent-container">
+            <div className="bio-container">
+                <div className="left-part">
+                    <div className="dr-image"></div>
+                    <div className="dr-name">Dr.Sachin Bansal</div>
+                    <div className="c">Dentist Implantologist</div>
+                    <div className="dr-experience">11 Years of Experience</div>
+                    <div className="education">Education: BDS, MBBS</div>
+                    <div className='dr-services'>Services: Dental Bonding, Dental Crowns, Bridge Works, Cosmetic Fillings, Invisalign</div>
+                    <div className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, quidem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, quidem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, quidem!</div>
+                </div>
+                <div className="right-part">
+                    <div className='images'>
+                        <div className='image-1'>
+                            <img src="https://cdn.pixabay.com/photo/2021/08/10/13/43/orthodontics-6536026_1280.jpg" alt="Dr. Sachin Bansal"></img>
+                        </div>  
+                        <div className='image-2'>
+                            <img src="https://cdn.pixabay.com/photo/2017/07/23/10/42/dentist-2530983_960_720.jpg" alt="Dr. Sachin Bansal"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+function Handson() {
   const handsons = [{
     topic: "X-ray Machine",
     date: "10 May 2024",
@@ -52,10 +84,10 @@ const Handson = () => {
               <div className="map-container">
                 <img src="./images/map.jpg" alt="Clinic Images" className="clinic-map" />
                 <a href="https://maps.google.com" className="get-directions">Get Directions</a>
-                <div className="rating">
+                
                   <span className="rating-value">4.7</span>
                   <span className="stars">★★★★★</span>
-                </div>
+                
                 <span className="reviews">(17 reviews)</span>
               </div>
               <div className="date-selector">
@@ -91,8 +123,26 @@ const Handson = () => {
           </div>
         </div>
       ))}
+      
     </div>
   );
 }
 
-export default Handson;
+
+function Combined() {
+  return (
+    <div>
+      <Header />
+      <Bio />
+      <Handson />
+      
+      <RatingPage />
+      <Footer />
+    </div>
+    
+  );
+}
+
+
+
+export default Combined;

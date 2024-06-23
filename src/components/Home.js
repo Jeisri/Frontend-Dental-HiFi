@@ -8,23 +8,27 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 
 
+
 const Home = () => {
   const slides = [
     { 
       url: 'https://media.istockphoto.com/id/1253875335/photo/connaught-place-with-national-flag.jpg?s=1024x1024&w=is&k=20&c=hhlMspWhlMWhPjfM__w0PJfBHF_9sBKByFjYc8wT2Nw=', 
       description: 'Description of Event 1', 
+      price: '$20 per person',
       date: 'Date: 2023-05-01',
       rating: '4.5 (205)' 
     },
     { 
       url: 'https://media.istockphoto.com/id/1027005714/photo/marine-drive-mumbai.jpg?s=1024x1024&w=is&k=20&c=_RZT1I6Horj8m_X0gTs2LqWyz2BsurqsJVYyV4OMoKY=', 
       description: 'Description of Event 2', 
+      price: '$20 per person',
       date: 'Date: 2023-06-15',
       rating: '4.2 (150)' 
     },
     { 
       url: 'https://media.istockphoto.com/id/1206421561/photo/sunset-traffic-in-new-delhi-tuc-tuc-cars-on-the-road-to-the-presidential-residance.jpg?s=1024x1024&w=is&k=20&c=OgA5TTVvlMvoQYNR9kPvFGG7E81fTXoc6SatpiY0nuo=', 
       description: 'Description of Event 3', 
+      price: '$20 per person',
       date: 'Date: 2023-07-20',
       rating: '4.1 (187)' 
     },
@@ -58,12 +62,14 @@ const Home = () => {
         <br />
 
         
-        <Link to="/Handson">
-          <p>Visit the Handson page</p>
-        </Link>
+        <p>Click <Link to="/handson">here</Link> to go to the Handson page.</p>
       </main>
 
       <Footer />
+
+      
+
+      
       
     </div>
   );
