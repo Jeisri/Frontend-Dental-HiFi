@@ -10,6 +10,7 @@ import Login from './components/LoginPage';
 import Doctor from './components/DoctorProfile';
 import Handson from './components/Handson';
 import Filters from './components/Filters';
+import Blog from './components/Blog';
 
 const App = () => {
     return (
@@ -21,7 +22,8 @@ const App = () => {
                     <Route path="/" element={<Doctor />} />
                     <Route path="/" element={<Handson />} />
                 </Routes>
-               <Filters />
+             
+              
             </div> 
             
         </Router>
