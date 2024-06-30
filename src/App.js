@@ -4,11 +4,7 @@ import {
     Routes,
     Route
 } from 'react-router-dom';
-import Home from './components/Home'; 
-import Handson from './components/Handson';
-import Filters from './components/Filters';
-import Blog from './components/Blog';
-
+import Home from './components/Home';
 
 const App = () => {
     return (
@@ -16,10 +12,8 @@ const App = () => {
             <div>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/handson" element={<Handson />} />
                 </Routes>
             </div> 
-            
         </Router>
     );
 };
