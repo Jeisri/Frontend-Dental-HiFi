@@ -121,7 +121,6 @@ color: black;
   }
 }
 
-/* Handson.css */
 
 .navbar {
   background-color: white;
@@ -197,6 +196,9 @@ color: black;
   }
 }
 
+
+/* Handson.css */
+
 .handson {
   margin-left: 5rem;
   margin-right: 5rem;
@@ -207,7 +209,6 @@ color: black;
   background-color: #fff;
   border-radius: 0.5rem;
   padding: 2rem;
-  
   margin-bottom: 2rem;
 }
 

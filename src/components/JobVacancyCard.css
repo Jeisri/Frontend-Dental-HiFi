@@ -1,0 +1,89 @@
+.job-vacancy-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 95%;
+  margin: 16px auto;
+  font-family: Arial, sans-serif;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-logo {
+  background-color: #eee;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.job-details h2,.job-details p {
+  margin-left: 20px;
+}
+
+.job-poster p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.job-body {
+  margin: 20px;
+}
+
+.job-responsibilities, .job-qualifications {
+  margin-bottom: 16px;
+}
+
+.job-details-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+}
+.job-duration i{
+  margin-left: 5px;
+}
+.job-duration span{
+  margin-left: 5px;
+  margin-right: 20px;
+}
+.job-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+  margin-top: 8px;
+}
+.days-ago{
+  color: #888;
+  margin-left: -15px;
+}
+.days-ago i{
+  margin-right: 5px;
+}
+.apply-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  background-color: #0056b3;
+}
